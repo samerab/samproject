@@ -2,6 +2,8 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { UploadModule } from '../upload/upload.module';
+import { MaterialModule } from 'app/material/material.module';
 
 //import components
 import { SliderComponent } from './components/slider/slider.component';
@@ -13,18 +15,22 @@ import { AnimateService,AnimationDataService,CreateService,SliderAnimationServic
 
 //import directives
 import { SlideDirective } from './directives/slide.directive';
+import { SanitizeHtmlPipe } from './pipes/sanitize-html.pipe';
 
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    UploadModule,
+    MaterialModule
   ],
   declarations: [
     SliderComponent,
     SlideComponent,
     SlideDirective,
+    SanitizeHtmlPipe,
     
   ],
   exports:      [ 
@@ -32,6 +38,7 @@ import { SlideDirective } from './directives/slide.directive';
     FormsModule,
     HttpClientModule,
     SliderComponent,
+    SanitizeHtmlPipe
   ],
   entryComponents: [SlideComponent],
 })

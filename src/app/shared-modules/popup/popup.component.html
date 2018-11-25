@@ -1,0 +1,10 @@
+<h1 *ngIf="!data.type">Specify type within the data object</h1>
+
+<sam-prompt *ngIf="data.type === 'prompt'"></sam-prompt>
+<sam-message *ngIf="data.type === 'message'"></sam-message>
+<sam-photos *ngIf="data.type === 'select-photo'"></sam-photos>
+<sam-components *ngIf="data.type === 'select-component'"></sam-components>
+<sam-video-info *ngIf="data.type === 'video-info'"></sam-video-info>
+<sam-columns *ngIf="data.type === 'columns'"></sam-columns>
+
+

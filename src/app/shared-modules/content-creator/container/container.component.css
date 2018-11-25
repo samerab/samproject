@@ -1,0 +1,16 @@
+.container-fluid {
+    position: relative;
+    /* width: 1140px; */
+    height: 1000px;
+    margin-top: 10px;
+}
+
+.root {
+    overflow: scroll;
+    height: 1000px;
+    max-height: 1200px
+}
+
+.space {
+    height: 200px;
+}

@@ -1,0 +1,30 @@
+button {
+    margin-left: 2px;
+}
+/* .mat-icon {
+    color: #757575;
+} */
+
+.mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button {
+    min-width: 32px;
+    padding: 0 5px;
+}
+.frame {
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.divider-container {
+    position: relative;
+    display: inline-block;
+}
+
+.divider {
+    position: absolute;
+    border-left: 1px solid grey;
+    height: 28px;
+    left: 0%;
+    top: -20px;
+}

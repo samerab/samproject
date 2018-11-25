@@ -1,0 +1,9 @@
+<ng-template 
+    cdkConnectedOverlay
+    [cdkConnectedOverlayOrigin]="overlayOrigin"
+    [cdkConnectedOverlayOpen]="isOpen">
+    <div class="dialog" #dialog>
+        <ng-content></ng-content>
+    </div>
+</ng-template>
+

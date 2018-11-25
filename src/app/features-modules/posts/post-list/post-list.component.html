@@ -1,4 +1,10 @@
-<p>
-  post-list works!
-</p>
-
+<div class="row">
+    <div *ngFor="let post of posts" [ngClass]="columns" class="card m-2">
+        <img class="card-img-top" src="{{ post.photo }}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{ post.title }}</h5>
+            <p class="card-text">{{ post.description }}</p>
+            <a [routerLink]="[post.id]" routerLinkActive="router-link-active" class="btn btn-primary">read more...</a>
+        </div>
+    </div>
+</div>

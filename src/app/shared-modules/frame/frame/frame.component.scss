@@ -1,0 +1,62 @@
+.card {
+    width: 100%;
+    text-align: right;
+}
+
+.card-body {
+    padding: 3px;
+}
+
+/* .card:hover {
+    background: rgb(162, 240, 162);
+} */
+
+button {
+    margin-left: 2px;
+}
+
+.mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button {
+    min-width: 32px;
+    padding: 0 5px;
+}
+
+.mat-icon {
+    color: #fff;
+}
+
+.frame0 { 
+    // border: 10px solid #711bac;
+    .btn-group {
+        background-image: linear-gradient(-45deg,#711bac 0%,#a721b4 100%);
+        /* background: #ddd; */ 
+        /* background: #26293a; اسود حلو*/  
+        direction: rtl;
+    }
+}
+
+.frame1 {
+    border: 10px solid #3aaa5c;
+    .btn-group {
+        background-image: linear-gradient(-45deg,#3aaa5c 0%,#02ee35 100%);
+        direction: rtl;
+    }
+} 
+
+.frame2 {
+    border: 10px solid #ad8a6c;
+    .btn-group {
+        background-image: linear-gradient(-45deg,#ad8a6c 0%,#f19409 100%);
+        direction: rtl;
+    }
+} 
+    
+
+.controls {
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+
+/* .btn-group:hover {
+    background: rgb(162, 240, 162);
+} */

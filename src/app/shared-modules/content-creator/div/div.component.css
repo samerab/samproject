@@ -1,0 +1,8 @@
+.row1 {
+    position: relative;
+    width: 570px;
+    height: 100px;
+    margin-top: 10px;
+    overflow: scroll;
+    max-height: 1200px
+}

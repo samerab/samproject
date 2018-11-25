@@ -1,0 +1,31 @@
+.card {
+    /* margin: 5px; */
+}
+
+.oneColumns {
+    width: 100%;
+    margin: 5px;
+}
+.twoColumns {
+    width: 40%;
+    float: left;
+    margin: 5px;
+}
+
+.threeColumns {
+    width: 25%;
+    float: left;
+    margin: 4.25px;
+}
+
+@media screen and (max-width: 992px) {
+    .threeColumns {
+        width: 100%;
+        margin: 5px;
+    }
+}
+
+.cards-container {
+    text-align: center;
+}
+

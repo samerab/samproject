@@ -1,0 +1,29 @@
+<div class="frame">
+  <button type="button" (click)="bold()" mat-button color="basic"><mat-icon>format_bold</mat-icon></button>
+  <div class="divider-container">
+    <div class="divider"></div>
+  </div>
+  <button [cpOKButtonText]="'Close'" [cpOKButton]="true" (colorPickerChange)="foreColor($event)" 
+    [(colorPicker)]="color" [style.color]="color" type="button"  mat-button color="basic">
+    <mat-icon>format_color_text</mat-icon>
+  </button>
+
+  <div class="divider-container">
+      <div class="divider"></div>
+  </div>
+
+  <button type="button" (click)="link()" mat-button color="basic"><mat-icon>link</mat-icon></button>
+  <button type="button" (click)="insertImage()" mat-button color="basic"><mat-icon>image</mat-icon></button>
+
+  <div class="divider-container">
+      <div class="divider"></div>
+  </div>
+
+  <button type="button" (click)="alignLeft()" mat-button color="basic"><mat-icon>format_align_left</mat-icon></button>
+  <button type="button" (click)="alignCenter()" mat-button color="basic"><mat-icon>format_align_center</mat-icon></button>
+  <button type="button" (click)="alignRight()" mat-button color="basic"><mat-icon>format_align_right</mat-icon></button>
+
+
+  <mat-divider></mat-divider>
+  <button type="button" (click)="openDialog()" mat-button color="basic"><mat-icon>format_bold</mat-icon></button>
+</div>

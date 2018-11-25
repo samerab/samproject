@@ -1,0 +1,33 @@
+<div id="wrapper" (mouseover)="show()"  [ngClass]="frame">
+  <div  [hidden]="hidden" class="btn-group" role="group" aria-label="Controls Buttons">
+    <button *ngIf="buttons.delete" type="button" (click)="delete()" class="btn btn-secondary" mat-button color="basic"><mat-icon>delete</mat-icon></button>
+    <button *ngIf="buttons.edit" type="button" (click)="edit()" class="btn btn-secondary" mat-button color="basic"><mat-icon>edit</mat-icon></button>
+    <button *ngIf="buttons.hide" type="button" (click)="hide()" class="btn btn-secondary" mat-button color="basic"><mat-icon>remove_red_eye</mat-icon></button>
+    <button *ngIf="buttons.add" type="button" (click)="add()" class="btn btn-secondary" mat-button color="basic"><mat-icon>add_box</mat-icon></button>
+    <button *ngIf="buttons.paste && isPaste()" type="button" (click)="paste()" class="btn btn-secondary" mat-button color="basic"><mat-icon>file_copy</mat-icon></button>
+    <button *ngIf="buttons.move" type="button" class="btn btn-secondary" [matMenuTriggerFor]="menu" mat-button color="basic"><mat-icon>transform</mat-icon></button>
+    <mat-menu #menu="matMenu">
+      <button (click)="moveUp()" mat-menu-item>
+        <span>Move Up</span>
+      </button>
+      <button (click)="moveDown()" mat-menu-item>
+        <span>Move Down</span>
+      </button>
+      <button (click)="moveToStart()" mat-menu-item>
+        <span>Move To Start</span>
+      </button>
+      <button (click)="moveToEnd()" mat-menu-item>
+        <span>Move To End</span>
+      </button>
+      <button (click)="moveToContainer()" mat-menu-item>
+        <span>Move To Container</span>
+      </button>
+      
+    </mat-menu>
+  </div>
+  <div  class="card-body">
+    <ng-content #content></ng-content>
+  </div>
+</div>
+
+<!-- (mouseout)="hideFrame()" -->

@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~@angular/cdk/overlay-prebuilt.css';
+@import '~@angular/cdk/a11y-prebuilt.css';
+
+p, h1, h2, label { 
+    font-family: 'DroidArabicKufiRegular'; 
+    font-weight: normal; 
+    font-style: normal; 
+ }
+
+ button:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.mat-dialog-container {
+    height: auto;
+}
+
+
+.cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
+    background: black;
+    opacity: 0.5;
+}

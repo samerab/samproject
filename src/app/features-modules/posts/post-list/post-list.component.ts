@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PostService } from '../post.service';
 
 @Component({
   selector: 'sam-post-list',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./post-list.component.css']
 })
 export class PostListComponent implements OnInit {
-
-  constructor() { }
+  posts;
+  columns = 'col-12'
+  
+  constructor(private postService: PostService) { }
 
   ngOnInit() {
+    this.postService.getAll().subscribe( posts => {
+      this.posts = posts;
+    });
   }
 
 }

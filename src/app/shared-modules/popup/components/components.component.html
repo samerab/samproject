@@ -1,0 +1,14 @@
+<!-- <div>
+  <img (click)="send('VideoComponent')" width="100px" src="/assets/video.svg" alt="">
+</div> -->
+
+<div *ngFor="let component of components;index as i" class="card" [ngClass]="{'selected': i === selected}" >
+    <img id="{{ i }}"  class="card-img-top" (click)="send(component.type)"
+      (dblclick)="sendPhotoData({photo: photo, close: true}, i)"
+      src="{{ component['url'] }}" 
+      alt="component.alt" width="200" height="200">
+    <div class="card-body">
+      <h5 class="card-title">{{ component.title }}</h5>
+      <!-- <p class="card-text"><small class="text-muted">Size: {{ photo['size'] | fileSize }}</small></p> -->
+    </div>
+</div> 

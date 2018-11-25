@@ -74,11 +74,9 @@ export class SliderComponent implements OnInit {
     this.setSliderDimensions().then((size) => {
       if (!this.width) {
         this.width = size['width'] + 'px';
-        console.log('this.width ', this.width);
       }
       if (!this.height) {
         this.height = size['height'] + 'px';
-        console.log('this.height ', this.height);
       }
     });
     this.setShortcuts();

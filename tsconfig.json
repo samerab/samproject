@@ -17,9 +17,13 @@
     ],
     "baseUrl": "src",
     "paths": {
-      "@shared/*": ["app/shared-modules/shared/*"],
-      "@sam/*": ["app/shared-modules/shared/sam-front-end-lib/*"],
-      
-    }
+      "@shared/*": [
+        "app/shared-modules/shared/*"
+      ],
+      "@sam/*": [
+        "app/shared-modules/shared/sam-front-end-lib/*"
+      ]
+    },
+    "module": "es2015"
   }
 }

@@ -1,0 +1,6 @@
+<sam-frame-popup [outputData]="data.value">
+    <p>{{ data.message}}</p>
+    <mat-form-field>
+        <input cdkFocusInitial matInput [(ngModel)]="data.value">
+      </mat-form-field>
+</sam-frame-popup>

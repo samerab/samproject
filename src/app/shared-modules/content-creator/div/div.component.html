@@ -1,0 +1,16 @@
+<sam-frame samFrameContent [parentFrameId]="parentId" [frameId]="id" [buttonsToHide]="['add', 'hide', 'move', 'paste']">
+  <div class="target">
+    <div class="row">
+      <div *ngFor="let div of data" class="{{ getClass(div) }}">
+        <sam-container #ContainerComponent [level]="level" [containerId]="div.id"></sam-container>
+      </div>
+    </div>
+  </div>
+</sam-frame>
+
+    <!-- <div class="row">
+      <div *ngFor="let div of data" class="{{ getClass(div) }}">
+        <sam-container #ContainerComponent [level]="level" [containerId]="div.id"></sam-container>
+      </div>
+    </div>
+   -->

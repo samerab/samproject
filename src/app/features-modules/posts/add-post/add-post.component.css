@@ -1,0 +1,18 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+
+  form {
+    direction: ltr;
+  }
+
+  #content {
+    height: 700px;
+    /* direction: rtl; */
+    overflow: scroll;
+  }

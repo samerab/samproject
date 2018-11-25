@@ -1,0 +1,12 @@
+<sam-frame-popup [outputData]="inputsData">
+    <mat-form-field>
+        <mat-select #select placeholder="Number of Divs">
+          <mat-option  *ngFor="let quantity of divs" [value]="quantity">{{quantity}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    <form class="form-inline">
+        <div *ngIf="select.value" class="form-group mx-sm-3 mb-2">
+            <input (input)=" getInputs()" #input *ngFor="let item of array(select.value)" type="number" class="form-control">
+        </div>
+      </form>
+</sam-frame-popup>

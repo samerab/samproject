@@ -1,0 +1,4 @@
+<sam-table 
+    (editClicked)="edit($event)" (deleteClicked)="openDeleteDialog($event)" 
+    columnAsId="id" [columnsAsDate]="['created', 'updated']" [data]="posts" [displayedColumns]='columns'>
+</sam-table>
